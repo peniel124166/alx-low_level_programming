@@ -2,9 +2,9 @@
 
 /**
  * _strcat - concatenates two strings
- * @dest: where copy to
- * @src: where copy from
- * Return: a pointer to string dest
+ * @dest: first param
+ * @src: second param
+ * Return: pointer to dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -12,17 +12,13 @@ char *_strcat(char *dest, char *src)
 	int j;
 
 	i = 0;
-	while (dest[i] != '\n')
-	{
+	while (dest[i] != '\0')
 		i++;
-	}
+
 	j = 0;
-	while (src[j] != '\n')
-	{
-		dest[i] = src[j];
-		i++;
+	while (src[j] != '\0')
 		j++;
-	}
-	dest[i] = '\n';
+
+	dest[i] = '\0';
 	return (dest);
 }
