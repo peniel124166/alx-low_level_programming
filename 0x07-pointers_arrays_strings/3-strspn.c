@@ -4,7 +4,6 @@
  * int _strspn -  the length of a prefix substring.
  * @s: The string to be searched.
  * @accept: The prefix to be measured.
- * description: to excute _strspn 
  *
  * Return: the number of bytes in the initial segment of s
  */
