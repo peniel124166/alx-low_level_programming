@@ -3,8 +3,8 @@
 
 /**
  * print_array - prints n elements of an array of integers.
- * @s: array.
- * @n: number of values.
+ * @a: array
+ * @n: number of values
  */
 void print_array(int *a, int n)
 {
