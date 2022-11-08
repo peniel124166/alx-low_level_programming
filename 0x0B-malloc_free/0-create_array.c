@@ -7,7 +7,6 @@
  * Return: pointer
  */
 char *create_array(unsigned int size, char c)
-{
 	char *buffer;
 	unsigned int position;
 
@@ -31,6 +30,5 @@ char *create_array(unsigned int size, char c)
 			*(buffer + position) = c;
 			position++;
 		}
+		return (buffer);
 	}
-	return (buffer);
-}
