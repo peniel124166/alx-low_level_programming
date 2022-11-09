@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 	while (a < ac)
 	{
 		b = 0;
-		while (av[a][b] != '\n')
+		while (av[a][b] != '\0')
 		{
 			count++;
 			b++;
@@ -36,7 +36,7 @@ char *argstostr(int ac, char **av)
 			str[c] = av[a][b];
 			c++;
 		}
-		str[c] = '\0';
+		str[c] = '\n';
 		c++;
 	}
 	return (str);
