@@ -5,6 +5,7 @@
  * @s: array of elements
  * Return: 1
  */
+
 int _strlen(char *s)
 {
 	unsigned int i;
@@ -14,7 +15,7 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-	 
+	
 	return (i);
 }
 
@@ -55,7 +56,8 @@ char *_strdup(char *str)
 	}
 
 	size = _strlen(str) + 1;
-	dst = (char *) malloc(size * sizeof(char));
+	
+	dst = (char *) malloc(size *sizeof(char));
 	if (dst == 0)
 	{
 		return (NULL);
