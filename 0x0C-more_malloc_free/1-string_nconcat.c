@@ -22,6 +22,7 @@ int _strlen(char *s)
  * string_nconcat - concatenates 2 strings
  * @s1: the first str
  * @s2: the second str
+ * @n: how much of s2 to add
  *
  * Return: ptr to new string
  */
