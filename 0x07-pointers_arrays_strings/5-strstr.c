@@ -9,24 +9,22 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int index;
+	char *bhaystack;
+	char *pneedle;
 
-	if (*needle == 0)
-		return (haystack);
-
-	while (*haystack)
+	while (*haystack != '\0')
 	{
-		index = 0;
-		if (haystack[index] == needle[index])
-		{
-			do {
-				if (needle[index + 1] == '\n')
-					return (haystack);
-				index++;
-			} while (haystack[index] == needle[index]);
-		}
+		bhaystack = haystack;
+		pneedle = needle;
 
-		haystack++;
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+		{
+			haystack++;
+			pneedle++;
+		}
+		if  (!*pneedle)
+			return (bhaystack);
+		haystack = bhaystack + 1;
 	}
-	return ('\0');
+	return (0);
 }
