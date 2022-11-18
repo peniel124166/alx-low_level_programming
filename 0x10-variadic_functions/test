@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+unsigned short x = -4
+clrscr()
+
+printf("%d", x)
+}
