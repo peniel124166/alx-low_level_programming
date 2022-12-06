@@ -1,5 +1,3 @@
-es (13 sloc)  233 Bytes
-
 #include "main.h"
 
 /**
