@@ -1,1 +1,2 @@
-1-create_dynamic_lib.sh
+#!/bin/bash
+gcc -shared -fPIC -o liball.so *.c
